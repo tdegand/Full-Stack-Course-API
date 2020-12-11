@@ -1,10 +1,10 @@
 'use strict';
 
-const sqlite3 = require('sqlite3');
+const mysql = require('mysql2');
 
 class Context {
   constructor(filename, enableLogging) {
-    this.db = new sqlite3.Database(filename);
+    this.db = new mysql.Database(filename);
     this.enableLogging = enableLogging;
   }
 
