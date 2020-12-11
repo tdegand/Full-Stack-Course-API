@@ -1,7 +1,4 @@
-
-# Full Stack JavaScript Techdegree v2 - REST API Project
-
-## Getting Started
+# Getting Started
 
 To get up and running with this project, run the following commands from the root of the folder that contains this README file.
 
