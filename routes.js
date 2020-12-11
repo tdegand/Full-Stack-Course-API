@@ -272,7 +272,7 @@ router.delete('/api/courses/:id', authenticateUser, asyncHandler(async(req, res)
 // setup a friendly greeting for the root route
 router.get('/', (req, res) => {
   res.json({
-    message: 'Welcome to the REST API project!',
+    message: 'Welcome to the REST API for Courses!!',
   });
 });
 
