@@ -1,14 +1,23 @@
 {
   "development": {
-    "storage": "fsjstd-restapi.db",
-    "dialect": "sqlite"
+    "username": "pd0vvxs252pcmgui",
+    "password": "xgpnz1srrpakx03j",
+    "database": "xvq53954zbkv26om",
+    "host": "fnx6frzmhxw45qcb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
   },
   "test": {
-    "storage": "fsjstd-restapi.db",
-    "dialect": "sqlite"
+    "username": "pd0vvxs252pcmgui",
+    "password": "xgpnz1srrpakx03j",
+    "database": "xvq53954zbkv26om",
+    "host": "fnx6frzmhxw45qcb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
   },
   "production": {
-    "storage": "fsjstd-restapi.db",
-    "dialect": "sqlite"
+    "username": "pd0vvxs252pcmgui",
+    "password": "xgpnz1srrpakx03j",
+    "database": "xvq53954zbkv26om",
+    "host": "fnx6frzmhxw45qcb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
   }
 }

@@ -6,6 +6,7 @@ const morgan = require('morgan');
 const Sequelize = require("sequelize")
 const bodyParser = require('body-parser')
 const cors = require('cors');
+const db = require('./models');
 
 // variable to enable global error logging
 const enableGlobalErrorLogging = process.env.ENABLE_GLOBAL_ERROR_LOGGING === 'true';
@@ -19,11 +20,12 @@ app.use(cors())
 // setup morgan which gives us http request logging
 app.use(morgan('dev'));
 
-//setup sequelize instance
-const sequelize = new Sequelize({
-	dialect: 'sqlite',
-  storge: './fsjstd-restapi.db',
-  logging: false
+//setup DB instance
+//DB connection
+const sequelize = new Sequelize('xvq53954zbkv26om', 'pd0vvxs252pcmgui', 'xgpnz1srrpakx03j', {
+  host: "fnx6frzmhxw45qcb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  port: "3306",
+  dialect: 'mysql'
 })
 
 sequelize.authenticate()
@@ -68,4 +70,5 @@ app.set('port', process.env.PORT || 5000);
 // start listening on our port
 const server = app.listen(app.get('port'), () => {
   console.log(`Express server is listening on port ${server.address().port}`);
+  db.sequelize.sync();
 });
