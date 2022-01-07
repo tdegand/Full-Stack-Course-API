@@ -12,11 +12,13 @@ const authenticateUser = async (req, res, next) => {
   let message = null;
   // Parse the user's credentials from the Authorization header.
   const credentials = auth(req);
+    console.log(credentials);
   // If the user's credentials are available...
     if(credentials) {
       const users = await User.findAll()
       //finds the user and matches the credentials
       const user = users.find(user =>  user.emailAddress === credentials.name)
+      console.log(user);
       if(user) {
         const authenticated = bcryptjs
           .compareSync(credentials.pass, user.password);
